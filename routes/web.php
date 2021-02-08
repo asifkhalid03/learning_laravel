@@ -17,13 +17,17 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
+//
+//Route::get('with-out-controller', function ()
+//{
+//    return view('first_html_page');
+//});
+//
+//Route::get('with-controller','htmlBodyController@mainPage');
 
-Route::get('with-out-controller', function ()
-{
-    return view('first_html_page');
-});
+//Route::get('car','htmlBodyController@getCars');
 
-Route::get('with-controller','htmlBodyController@mainPage');
+Route::get('calculator','calculatorController@main');
 
-Route::get('car','htmlBodyController@getCars');
+Route::post('sum','calculatorController@sum');
 
