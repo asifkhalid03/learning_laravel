@@ -33,3 +33,7 @@ Route::post('sum','calculatorController@sum');
 
 Route::post('sub','calculatorController@sub');
 
+Route::get('inventory', 'inventoryController@main');
+
+Route::post('inventory/insert-data', 'inventoryController@insertData');
+
