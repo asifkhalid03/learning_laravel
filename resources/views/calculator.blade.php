@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Title of the document</title>
+    <title>Calculator</title>
 </head>
 
 <body>
@@ -17,9 +17,30 @@
     
 </form>
 
-
 @if(isset($resultOfSum))
-<h2>{{$resultOfSum}} </h2>
+    <h2>{{$resultOfSum}} </h2>
+@endif
+
+
+
+
+<h1> Subtract </h1>
+
+<form method="post" action="/sub">
+
+    <input type="hidden" name="_token" value="{{csrf_token()}}">
+
+    Value 1 : <input type="number" name="n3" >
+    Value 2 : <input type="number" name="n4" >
+    <button type="submit">Subtraction</button>
+
+</form>
+
+
+
+
+@if(isset($resultOfSub))
+<h2>{{$resultOfSub}} </h2>
 @endif
 
 

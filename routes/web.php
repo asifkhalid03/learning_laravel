@@ -31,3 +31,5 @@ Route::get('calculator','calculatorController@main');
 
 Route::post('sum','calculatorController@sum');
 
+Route::post('sub','calculatorController@sub');
+
